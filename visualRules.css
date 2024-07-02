@@ -1,0 +1,18 @@
+table{
+    padding: 10px;
+    text-align: center;
+    border: 5px solid lightblue;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+}
+
+td{
+    padding: 0px 10px;
+}
+
+.coloredPTag{
+    color:yellow;
+    background-color: black;
+}

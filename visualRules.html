@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="visualRules.css">
+</head>
+<body>
+
+    <h1>Visual Rules</h1>
+
+    <h2>Introduction to visual rules</h2>
+    <h2>Font family</h2>
+
+    <p>Font refers to the technical term typeface, or font family</p>
+    <p>use the font-family property to change the typeface</p>
+
+    <p>When using typefaces, understand these things:</p>
+    <ul>
+        <li>The font specified has to be installed on the user's computer or downloaded with the site</li>
+        <li>Web safe fonts are gonts supported among all browsers and operating systems</li>
+        <li>If you are not using web safe fonts, the font you choose may not appear the same on browsers and operating systems</li>
+        <li>If the name of the typeface consists of more than one word, it's best practice is to enclose the typeface's name in quotes</li>
+    </ul>
+
+    <hr>
+
+    <h2>Font size</h2>
+
+    <p>To change the size of the text on your web page, you can use the font-size proeprty</p>
+
+    <hr>
+
+    <h2>Font weight</h2>
+    <p>Font-weight property controls how bold or thin the text appears</p>
+
+    <hr>
+
+    <h2>Text align</h2>
+
+    <p>To align text, we can use the text-align property. The text-align property will align text to the element that holds it, otherwise known as its parent</p>
+
+    <p>The text-align property can be set to one of the following commonly used values</p>
+
+    <table>
+        <thead>
+            <th>Value</th>
+            <th>Description</th>
+        </thead>
+        <tr>
+            <td>Left</td>
+            <td>Aligns text to the left side of its parent element</td>
+        </tr>
+        <tr>
+            <td>center</td>
+            <td>Centers text inside of its parent element</td>
+        </tr>
+        <tr>
+            <td>Right</td>
+            <td>Aligns text to the right side of its parent element</td>
+        </tr>
+        <tr>
+            <td>Justify</td>
+            <td>Spaces out text in order to align with the right/left side of the parent element</td>
+        </tr>
+        <tr>
+            <td>Center</td>
+            <td>Centers the text of its parent element</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <h2>Color and background color</h2>
+
+    <p>Two distinctions about color</p>
+    <ol>
+        <li>Foreground Color. The element itself. Using the color property</li>
+        <li>Background Color. The background. Using the background-color property</li>
+    </ol>
+
+    <p class="coloredPTag">I am learning coding</p>
+
+    <hr>
+
+    <h2>Opacity</h2>
+
+    <p>Opacity is the measure of how transparent an element is</p>
+    <ul>
+        <li>It is measured from 0 to 1. 1 represents 100%. Fully visible. Opaque.</li>
+        <li>0 represents invisible</li>
+    </ul>
+
+    <hr>
+
+    <h2>Background Image</h2>
+
+    <p>One option to make the background of an element an image. This is done through the CSS property background-image</p>
+    <p>You write background-image then give a value of url("the url to the image" - can be a file or a link to external site)</p>
+    <p>If it is a file inside an existing project, you have to provide a relative file path</p>
+
+    <aside>
+        A relative path is an address that points to the current directory or project folder
+    </aside>
+
+    <hr>
+
+    <h2>IMPORTANT</h2>
+
+    <p>!important can be applied to specific declarations. It will override any style no matter how specific. Thus it shouldn't be used</p>
+    
+
+    <p>A justification for using !important is when working with multiply stylesheets. I.e, incoporating boostrap, and we want to override the styles for one specific HTML element, we can use !important</p>
+</body>
+</html>
