@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Positioning</title>
+</head>
+<body>
+
+    <h1>Display and positioning</h1>
+    
+    <h2>Flow of HTML</h2>
+    <p>CSS includes how properties that change how a browser positons elements. These properties will specify where an element is located on a page</p>
+    <p>In this lesson, 5 properties will be taught for adjusting the position of HTML elements in the browser</p>
+
+    <ul>
+        <li>Position</li>
+        <li>Display</li>
+        <li>Z-index</li>
+        <li>Float</li>
+        <li>Clear</li>
+    </ul>
+
+    <hr>
+
+    <h2>Position</h2>
+
+    <p>Block-level elements create a block, the whole width of their parent elements</p>
+    <p>Block level elements prevent other elements from appearing in the same horizontal sapce</p>
+    <p>The default position for block-level elements is appearing on the left side of the browser</p>
+
+    <p>The default position of an element can be changed by setting its position property</p>
+    <p>The properties it can take are:</p>
+
+    <ul>
+        <li>Static</li>
+        <li>Relative</li>
+        <li>Absolute</li>
+        <li>Fixed</li>
+        <li>Sticky</li>
+    </ul>
+
+    <hr>
+
+    <h2>Position: Relative</h2>
+
+    <p>Relative value allows you to position an element relative to its default static positon on the web page</p>
+    <p>You will have to specify the offset properties that will move the element away from its default static position</p>
+
+    <ul>
+        <li>Top. Move element down from TOP</li>
+        <li>Bottom. Move element up from DOWN</li>
+        <li>Left. Moves element away from the left side - so moves it to the right</li>
+        <li>Right. Moves element away from the right side - so moves it to the left</li>
+    </ul>
+
+    <p>You can specify values for the offset properties as px, em, percentage</p>
+    <p>Offsetting the relative element will not affect the positioning of other elements</p>
+
+    <hr>
+
+    <h2>Position: Absolute</h2>
+
+    <p>when an element's position is set to absolute, all other elements on the page will ignore the element, and act like it is not present on the page</p>
+    <p>Absolute elemenets will be positioned relative to its closest positioned parent element</p>
+    <p>Using absolute, you remove it from the normal flow fo the document</p>
+
+    <hr>
+
+    <h2>Position: Fixed</h2>
+
+    <p>Fix an element to a specific position on the page by setting its position to fixed and following it with familiar offset properties, top, bottom, left, right,</p>
+    <p>The element with position fixed, will remain fixed no matter where the user scrolls.</p>
+
+    <hr>
+
+    <h2>Position: Sticky</h2>
+
+    <p>Static and relative positioned elements stay in the normal flow of the document.</p>
+    <p>Fixed and absolute positioned elements are removed from the document flow, thus when a user scrolls, these elements will stay at their specified offset position</p>
+    <p>The sticky value is a value that keeps an element in the document flow as the user scrolls, but sticks to a specified positioned at the page is scrolled further.</p>
+    <p>This is done via using the sticky value, along with the familiar offset properties</p>
+
+
+    <hr>
+
+    <h2>Z-index</h2>
+
+    <p>This property controls how far back or forward an element should appear on the web page when elements overlap</p>
+    <p>The value accepted is an integer</p>
+    <p>Depending on their value, the integer instruct the browser on the order in which elements should be layered on the web page</p>
+    <p>Z-index does not work on static elements</p>
+    <p>If z-index is not specified on an element, then it is 0 by default</p>
+
+    <hr>
+
+    <h2>Inline Display</h2>
+
+    <p>The default value for display.</p>
+    <p>Inline just wraps tightly around their content. Only taking up the amount of space necessary to display their content and not requiring a new line after each element</p>
+    <p>Height and width cannot be specified for inline elements</p>
+    <p>The CSS display property provides the ability to make any element an inline element</p>
+
+    
+
+
+</body>
+</html>
