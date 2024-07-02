@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of CSS</title>
+
+    <style>
+        span{
+            color: blueviolet;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <h1>Introduction: Fundamentals of CSS</h1>
+
+        <h2>Learn CSS: Selectors and Visual Rules</h2>
+
+        <h3>Setup and Syntax</h3>
+
+        <h4>Intro To CSS</h4>
+
+        <p>CSS. Cascading Style Sheets. The language deelopers use to style HTML content</p>
+
+        <h4>CSS antomy</h4>
+
+        <p><strong>There are two terms: Ruleset and Inline style</strong></p>
+
+        <p>Declarations are the core of CSS. They apply a style to the selected element.</p>
+        <p>Understadn that a declaration is used to style a selected element is key to learning how to style HTML docs with CSS</p>
+
+        <table>
+            <tr>
+                <td>Selector</td>
+                <td>The beginning of a ruleset used to target the element that will be styled</td>
+            </tr>
+            <tr>
+                <td>Declaration block</td>
+                <td>The code in-between (and including) the curly braces ({}) that contains the CSS declarations</td>
+            </tr>
+            <tr>
+                <td>Declaration</td>
+                <td>The group name for a property and value pair that applies a style to the selected element</td>
+            </tr>
+            <tr>
+                <td>Property</td>
+                <td>First part of the declaration that signifies what visual characteristic of the element is to be modified</td>
+            </tr>
+            <tr>
+                <td>Value</td>
+                <td>Second part of the declaration that signifies the value of the proeprty</td>
+            </tr>
+        </table>
+
+        <p>I am not going to include the inline style terms</p>
+
+        <h4>Inline Styles</h4>
+
+        <p>You can write CSS code directly into HTML code using inline styles</p>
+
+        <p>within the opening tag of the HTML code, use the style attribute with the property and value. To add multiple styling, use ; to seperate each property and value</p>
+        
+        <p style="color: blue; font-size: 100px;"> This has inline styling</p>
+
+        <p>Inline styling is rare, but sometimes necessary</p>
+
+        <h4>Internal Stylesheet</h4>
+
+        <p>Inline stylign is the worst because if you wanted to style, multiple h1s you would have to add inline styling to each element manually.</p>
+
+        <p>HTML allows a dedicated section to adding CSS. Using the style tags, all CSS goes within here. The style tag goes inside the head tags</p>
+
+        <p>Internal stylesheet is better than inline but not the best way</p>
+
+        <p><span>Texts inside span elements will now have styling that comes from the internal stylesheet</span></p>
+        <p><span>I am just targetting span element for now</span></p>
+
+        <h4>External Stylesheet</h4>
+
+        <p>Developers avoid misisng code by storing HTML and CSS code in seperate files</p>
+        <p>You can create an external stylesheet using the .css file name extension.</p>
+        <p>Use external stylesheets to avoid sacrificing readabiltiy and maintability of your HTML file</p>
+
+
+        <h4>Linking the CSS file</h4>
+
+        <p>Files must be linked. Use the link tag. This should be palced in the head tag too.</p>
+        <p>The link tag has two attributes</p>
+        <ul>
+            <li>href. The value of this attribute mus tbe the address or path</li>
+            <li>rel. This just describes the relationship between the HTML and CSS file. Thus you would put stylesheet as the value</li>
+        </ul>
+
+        <a href="styledIndex.html">Click here to access the HTML file with CSS external style sheet</a>
+
+
+    </main>
+    
+    
+
+
+
+
+</body>
+</html>

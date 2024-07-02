@@ -1,0 +1,52 @@
+h3{
+    color:green
+}
+
+h5{
+    font-weight: bolder;
+}
+
+.changeThisPTag{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: goldenrod;
+
+}
+
+.red{
+    color: red
+}
+
+.thick{
+    font-weight: 800;
+}
+
+/* attribute selector */
+
+a[href*='google']{
+    color:palegreen;
+    font-size: x-large;
+}
+
+/* pseudo */
+
+.hoverPTag:hover{
+    color: firebrick;
+}
+
+/* chaining */
+
+p.chain{
+    font-size: 50px;
+}
+
+/* descendant styling */
+
+.breadBrand li {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* chaining and specificity */
+
+.green p{
+    color:green
+}

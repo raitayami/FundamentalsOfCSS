@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h3>Selectors</h3>
+
+    <h4>Type</h4>
+
+    <p>Recall that declarations are a fundamental part of CSS as they apply a style to a selected element</p>
+    <p>You decide an element gets a style uisng a selector</p>
+    <p>A selector targets a specifci HTMl element to be styled by a declaration</p>
+
+    <h5>The first selector we will learn is: The type selector</h5>
+
+    <p>The type selector matches the tpe of the element in the HTML doc</p>
+    <p>The h5 element two lines above is styled using the type selector</p>
+
+    <h4>Universal selector (*)</h4>
+    
+    <p>This targets all elements on the page. The benefit is, you can modify default browser stylings</p>
+
+    <h4>Class selector</h4>
+
+    <h5>This is the second selector we will learn: The class selector</h5>
+    
+    <p>You insert the class attribute in the opening tag and give the value a name to use in the external stylesheet</p>
+
+    <p class="changeThisPTag">Some random text that is being styled using class selector</p>
+
+    <!-- 
+    you create a ruleset in the css stylesheet that looks like This
+    .changeThisPTag{
+    } -->
+
+    <h4>Multiple classes</h4>
+
+    <p>You can add multiple class name to a HTML element's class attribute</p>
+
+    <p class="red thick">This has two classes in the opening p tag</p>
+
+    <p>This results in NOT writing a custom class for every style combination needed</p>
+
+    <h4>ID</h4>
+
+    <h5>This is the third selector we will learn: The ID selector</h5>
+
+    <p>same concept as class, however:</p>
+
+    <ul>
+        <li>Use # instead of a . to target</li>
+        <li>No multiple values allowed, ID attribute only has one value and thats the name you give it</li>
+        <li>You can only use the value of the ID ONCE. This is for uniqueness</li>
+    </ul>
+
+    <h4>Attribute</h4>
+
+    <p>Target HTML elements that already containa attributes</p>
+
+    <a href="google.com">This is styled using an attribute selector - view the style sheet to understand (research more)</a>
+
+    <h4>Pseudo-class</h4>
+
+    <p>Examples of this is when certain elemetns change after a user interaction. Such as clicking a link, and then it turns purple after</p>
+
+    <ul>
+        <li>Adding, :hover, :focus or :visited, (research for more) to a selector. Such as p:hover </li>
+        <li>A pseudo class can be attached to any selector</li>
+    </ul>
+
+    <p class="hoverPTag">This paragraph tag has a pseudo selector attached to its class tag</p>
+
+    <h4>Classes and IDS</h4>
+
+    <p>Classes can be used as many times as they want.</p>
+    <p>You can write seperate styles, and then mix and match, rather than creating customer styles for one thing.</p>
+    <p>Imagine two paragraph. One needs to be bold and blue, the other needs to be bold and green. Rather than creating custom styling for each, you have have 3 classes, giving the first one two classess of bold and blue, the second paragraph tag, bold and green.</p>
+
+    <p>ID is meant to style only one element</p>
+    <p>ID overrides styles of types and classess.</p>
+
+
+    <h4>Specificity</h4>
+
+    <p>This is the order by which the browser decides which CSS styles to be display</p>
+    <p>The best practice in CSS is to style elements while using the lowest degree of specificty so that is an element needs a new style, it is easy to override</p>
+
+    <ol>
+        <li>ID - the most speicfic</li>
+        <li>Class</li>
+        <li>Type</li>
+    </ol>
+
+    <p>To make stylign easy to edit, it is best to style with a type selector, if possible, if not use a class.</p>
+    <p>If that is not speicfic enough, use an ID selector</p>
+
+    <h4>Chaining</h4>
+
+    <p>You can target HTML elements by chaining slectors together</p>
+    <p class="chain">This p tag has a class of chain, but onlt the p tags with class chain will change</p>
+
+    <hr>
+
+    <h4>Descendant Combinator</h4>
+
+    <p>CSS also supports selecting elements that are nested within other HTML elements</p>
+    <p>The process is known as descendants</p>
+    <p>Recall how the LI elements are nested within the UL tag. Imagine the UL tag having a class of breadBrand</p>
+
+    <ul class="breadBrand">
+        <li>Jason</li>
+        <li>Hovis</li>
+        <li>Kingsmill</li>
+    </ul>
+
+    <p>In your stylesheet, writing .breadBrand li {} will target the li within the class called breadBrand</p>
+    <p>this is a very specific way to select and style elements</p>
+
+    <hr>
+
+    <h4>Chaining and Specificity</h4>
+
+    <p>Adding more than one tag, class or ID to a CSS selector increases its specificity.</p>
+
+    <div class="green">
+        <p>600 green paragraph text</p>
+    </div>
+
+    <hr>
+
+    <h4>Multiple selectors</h4>
+
+    <p>If two selectors or more, have styling that are exactly the same, insert a comma</p>
+    <p>Assume you're targetting a h1 and an element with class menu, and they both have stylign where the font changes</p>
+    <p>Rather than having two stylings, insert a comma such as: h1, menu : {the styling} </p>
+
+
+    <hr>
+
+    <h3>Practice Concepts</h3>
+
+    <p>Inserting !important on a ruleset, will override every specific selector... (idk if its every)</p>
+
+</body>
+</html>
