@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Display and Positioning</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <h1>Display and positioning</h1>
+
+
+    <a href="action.html">Display and Positioning elements in action</a>
+
     
     <h2>Flow of HTML</h2>
     <p>CSS includes how properties that change how a browser positons elements. These properties will specify where an element is located on a page</p>
@@ -102,8 +107,53 @@
     <p>Height and width cannot be specified for inline elements</p>
     <p>The CSS display property provides the ability to make any element an inline element</p>
 
-    
+    <hr>
 
+    <h2>Display: Block</h2>
+
+    <p>Elements that aren't displayed in the same line as the content around them are known as block-level elements</p>
+    <p>These elements will fill the entire width of the page by default</p>
+    <p>Their height and width can be modified </p>
+    <p></p>
+
+    <hr>
+
+    <h2>Display: Inline-block</h2>
+
+    <p>The features for this value combines features of both inline and block elements</p>
+    <p>Inline block elements can appear next to each other and specify their dimensions using the width and height properties</p>
+    <p>The IMG tag is a good example of inline-block</p>
+
+    <hr>
+
+    <h2>Float</h2>
+
+    <p>To simply position an element as far left or right as possible in the container, use the float property</p>
+    <p>Float is normally used to wrap text around images</p>
+    <p>Moving elements to the left or right is for layout purpose (CSS GRID, flexbox)</p>
+    <p>The values are either left or right. Moving the element as far left/right as possible.</p>
+    <p>Floating works for statics and relative positioned elements, and they must have a width specified</p>
+
+    <hr>
+
+    <h2>Clear</h2>
+
+    <p>The clear property specifies how elements should behave when they bump into each other on the page</p>
+    <p>The value left/ride means that the left/right side of the element will not touch any other element within the same containing element</p>
+    <p>Both. Neither side of the element will touch any other element within the same containing element</p>
+    <p>None, the element can touch either side</p>
+
+    <hr>
+
+    <h2>Quiz</h2>
+
+    <p>Fix elements will be fixed to a specific location on the screen. Thus removing an element from the flow of the HTML document.</p>
+
+    <p>Z index is ignored if an element is set to a position value of static</p>
+
+    <p>Which value (rel, fix, stat, abs) will position an element in relation to the nearest non-static element? Absolute</p>
+
+    <p>any element that bumps into an h3 element on the LHS, move it to a new line. h3 { clear : left }</p>
 
 </body>
 </html>

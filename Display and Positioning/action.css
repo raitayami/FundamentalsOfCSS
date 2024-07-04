@@ -1,0 +1,161 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Task 1 */
+
+
+.targetAfter{
+    background-color: purple;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 0px 0px 5px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.containerAfter{
+    width: 30%;
+    border: 5px solid lightgrey;
+    padding-left: 5px;
+    position: relative;
+}
+
+
+/* Task 2 */
+
+
+.container2before{
+    width: 20%;
+    height: 200px;
+    border: 5px solid lightgrey;
+    overflow: scroll;
+
+}
+
+.sidebar2before{
+    background-color: rgb(199, 236, 199);
+    padding: 5px;
+    width: 90px;
+    float:left;
+    margin: 10px 10px;
+}
+
+.content2before{
+    float: right;
+    width: 55%;
+}
+
+
+.container2after{
+    width: 20%;
+    height: 200px;
+    border: 5px solid lightgrey;
+    overflow: scroll;
+
+}
+
+.sidebar2after{
+    background-color: rgb(236, 29, 215);
+    position: sticky;
+    top: 0px;
+    left:0px;
+    display: inline-block;
+    padding: 5px;
+    width: 90px;
+    margin: 10px 10px;
+  
+}
+
+.content2after{
+    float: right;
+    width: 55%;
+}
+
+.loremText{
+    font-size: 30px;
+}
+
+.box1{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+    position: relative;
+    top: 100px;
+    left: 40px;
+}
+
+.box2{
+    border: 1px solid;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+}
+
+
+.box3{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+
+}
+
+.box4{
+    border: 1px solid;
+    width: 100px;
+    background-color: paleturquoise;
+    position: absolute;
+    top: 30px;
+    padding: 10px;
+}
+
+.absoluteDiv{
+    position: relative;
+}
+
+.box5{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: sienna;
+    position: relative;
+    left: 300px;
+}
+
+.box6{
+    border: 1px solid;
+    width: 100px;
+    background-color: indigo;
+    color: white;
+    position: absolute;
+
+    padding: 10px;
+}
+
+
+
+.box7{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(217, 52, 85);
+    position: fixed;
+    top: 0px;
+    right: 0px;
+}
+
+.box8{
+    border: 1px solid;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(88, 132, 254);
+    position: sticky;
+    bottom: 0px;
+}
